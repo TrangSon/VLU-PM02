@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>HOME</title>
+    <style>
+      .menu_item {
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ADMIN HOME</h1>
+    <div>
+      Hello <b><%= session.admin.username%></b>
+      |
+      <a href='logout'>Logout</a>
+    </div>
+    <br/>
+    <div>
+      <a href='' class='menu_item'>HOME</a>
+      <a href='category' class='menu_item'>CATEGORY</a>
+      <a href='' class='menu_item'>PRODUCT</a>
+      <a href='' class='menu_item'>ORDER</a>
+      <a href='' class='menu_item'>CUSTOMER</a>
+    </div>
+    <img src='https://cliparting.com/wp-content/uploads/2018/03/animated-emoticons-2018-13.gif' width="600" height="400">
+  </body>
+</html>
