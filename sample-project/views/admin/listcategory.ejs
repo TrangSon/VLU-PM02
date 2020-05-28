@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>LIST CATEGORY</title>
+  </head>
+  <body>
+    <h1>LIST CATEGORY</h1>
+    <a href='addcategory'>ADD NEW</a>
+    <br/><br/>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+      <% for (var cat of cates) { %>
+      <tr>
+        <td><%= cat._id%></td>
+        <td><%= cat.name%></td>
+        <td>
+          <a href='editcategory?id=<%= cat._id%>'>Edit</a>
+          ||
+          <a href='deletecategory?id=<%= cat._id%>' onclick='return confirm("ARE YOU SURE?")'>Delete</a>
+        </td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>

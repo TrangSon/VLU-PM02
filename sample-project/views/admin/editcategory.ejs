@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>EDIT CATEGORY</title>
+  </head>
+  <body>
+    <h1>EDIT CATEGORY</h1>
+    <form action='editcategory' method="POST">
+      _id <input type='text' name='id' value='<%= cate._id%>' readonly><br/>
+      Name <input type='text' name='catename' value='<%= cate.name%>'><br/>
+      <input type='submit' value='UPDATE'/>
+    </form>
+  </body>
+</html>
